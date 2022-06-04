@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: "Poppins", sans-serif;
+
+  color: var(--color-text);
+  background-color: #3a3845;
+}
+
+:root {
+  --color-primary: #ff6b6b;
+  --color-white: #fff;
+  --color-text: #1b1a17;
+}
+
+/* General */
+
+.heading-1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-transform: none;
+
+  color: var(--color-white);
+}
+
+/* main */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 40rem;
+  height: 4rem;
+
+  background-color: #fff;
+
+  position: relative;
+}
+
+.input-password {
+  width: 80%;
+  height: 100%;
+
+  font-size: 1.8rem;
+
+  border: 2px solid #f0a500;
+  outline: none;
+
+  text-indent: 1rem;
+  caret-color: #f0a500;
+  cursor: text;
+
+  position: relative;
+}
+
+.input-password:hover,
+.input-password:active {
+  border: 2px solid #f0a500;
+}
+
+.input-password::placeholder {
+  font-size: 1.4rem;
+}
+
+.btn {
+  width: 20%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+  background-color: #f0a500;
+
+  font-size: 1.4rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  background-color: #ffae00;
+  /* transform: translateY(-.2px); */
+}
+
+.icon {
+  font-size: 0;
+  cursor: pointer;
+
+  color: #f0a500;
+
+  position: absolute;
+  top: 50%;
+  right: 9rem;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.icon:hover {
+  color: #ffae00;
+}
+
+/* Dynamic classes */
+
+.icon.active {
+  font-size: 1.3rem;
+}
